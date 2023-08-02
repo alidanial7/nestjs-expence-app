@@ -17,7 +17,7 @@ type Data = {
 export const data: Data = {
   report: [
     {
-      id: 'uuid1',
+      id: 'da997a09-5f0e-4d86-ab07-653ee6c62707',
       source: 'Salary',
       amount: 1000,
       created_at: new Date(),
@@ -25,7 +25,7 @@ export const data: Data = {
       type: ReportType.Income,
     },
     {
-      id: 'uuid2',
+      id: '93f63f7a-8fc3-46b1-b385-457d485b32b5',
       source: 'FastFood',
       amount: 10,
       created_at: new Date(),
@@ -33,7 +33,7 @@ export const data: Data = {
       type: ReportType.Expense,
     },
     {
-      id: 'uuid3',
+      id: '7c9bbbd8-86ba-466d-bd47-de1aaf33ce04',
       source: 'Project',
       amount: 700,
       created_at: new Date(),
