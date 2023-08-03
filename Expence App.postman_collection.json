@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "8b5ba3b7-72dd-41af-a687-cf9de886077a",
+		"name": "Expence App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "report",
+			"item": [
+				{
+					"name": "income",
+					"item": [
+						{
+							"name": "get income reports list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/income",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"income"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get income report by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/income/7c9bbbd8-86ba-466d-bd47-de1aaf33ce04",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"income",
+										"7c9bbbd8-86ba-466d-bd47-de1aaf33ce04"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create income report",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"source\":\"test\",\n    \"amount\":200\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/report/income",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"income"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update income report",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"source\":\"test\",\n    \"amount\":300\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/report/income/7c9bbbd8-86ba-466d-bd47-de1aaf33ce04",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"income",
+										"7c9bbbd8-86ba-466d-bd47-de1aaf33ce04"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete income report",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/income/7c9bbbd8-86ba-466d-bd47-de1aaf33ce04",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"income",
+										"7c9bbbd8-86ba-466d-bd47-de1aaf33ce04"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "expence",
+					"item": [
+						{
+							"name": "get exponse reports list",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/exponse",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"exponse"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get exponse report by id",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/exponse/uuid2",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"exponse",
+										"uuid2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "create exponse report",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/exponse",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"exponse"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update exponse report",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/exponse/1",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"exponse",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete exponse report",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/report/exponse/111",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"report",
+										"exponse",
+										"111"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "summary",
+			"item": [
+				{
+					"name": "get summary",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000",
+			"type": "default"
+		}
+	]
+}
